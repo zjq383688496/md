@@ -1,0 +1,49 @@
+//
+// Global
+// --------------------------------------------------
+
+
+// 导入全局变量
+@import "other/variables.less";
+
+// 导入混合宏
+@import "mixins/mixins.less";
+
+// Common
+* {
+	.m;
+	.p
+}
+body {
+    font-family: "Helvetica Neue", Helvetica, "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif;
+    color: @gray3;
+}
+a {
+	color: @gray3;
+	text-decoration: none;
+}
+img {
+	.db;
+}
+select,
+textarea,
+input {
+    outline: none;
+}
+ul,
+li {
+	list-style: none;
+}
+
+// layout
+.layout,
+.container {
+	.ma;
+	.clearfix;
+}
+.layout {
+	.w(@layout);
+}
+.container {
+	.w(@container);
+}

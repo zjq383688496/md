@@ -1,0 +1,1 @@
+(1 << 24).toString(2).replace(/\d/g, '1111').split('').map((x, i) => i)

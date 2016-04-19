@@ -1,0 +1,53 @@
+{{! 公共头部(完整) }}
+<div class="header">
+	<a class="logo"></a>
+	<ul class="h-nav">
+		<li><a href="/">首页</a></li>
+		<li><a href="/">探索</a></li>
+		<li><a href="/">聚焦</a></li>
+		<li><a href="/">签证</a></li>
+		<li class="c-new"><a href="/">众筹</a></li>
+		<li class="c-new"><a href="/">斐色天堂</a></li>
+	</ul>
+	<div class="h-info">
+		<div class="h-info-top">
+			{{#if isVisa}}
+			<a class="h-visa" href="/visa/home.html">
+				<i class="icon-news"></i>
+				签证进度查询
+			</a>
+			<b>|</b>
+			{{/if}}
+			<p class="h-phone-time">
+				<i class="icon-phone"></i>
+				4000-758-758
+				<span>(9:00 - 20:00)</span>
+			</p>
+		</div>
+		<div id="hUser" class="h-user">
+			{{! 未登录 }}
+			<div class="h-not-login">
+				<a href="/user/loginPage.do">登录</a>
+				<span>|</span>
+				<a href="/user/registerPage.do">注册</a>
+			</div>
+			{{! 已登录 }}
+			{{!-- <div class="h-login-info">
+				<img width="40" height="40" alt="麦兜旅行" src="{{staticPath}}/img/common/user03.jpg">
+				<p>
+					<label id="my_user">135****5633</label>
+					<i class="icon-triangle-down"></i>
+				</p>
+				<div class="h-user-list">
+					<a href="/user/center/order/list.do">我的订单</a>
+					<a href="/user/center/presell/queryPresellCode.do">我的预约码</a>
+					<a href="/user/center/coupon/list.do">我的优惠劵</a>
+					<a href="/user/center/balance/list.do">我的余额</a>
+					<a href="/user/center/collect/list.do">我的关注</a>
+					<a href="/user/center/modifyPasswdPage.do">修改密码</a>
+					<a href="/user/logout.do">退出</a>
+				</div>
+			</div> --}}
+		</div>
+	</div>
+</div>

@@ -1,0 +1,291 @@
+@charset "utf-8";
+
+// 引入全局方法
+@import "global.less";
+
+
+// header
+.header {
+	.posr;
+	z-index: 10;
+	.wh(@container; 95);
+	.ma;
+	.logo {
+		.posa;
+		top: 0;
+		left: 0;
+		.db;
+		.wh(220; 155);
+		background: url(../img/common/logo.png) center no-repeat;
+		.bz(100%);
+	}
+	.h-nav {
+		.fl;
+		.pt(55);
+		.pl(256);
+		li {
+			.posr;
+			.fl;
+			.mr(40);
+			a {
+				.db;
+				color: @dark;
+			}
+			&.c-new {
+				&:after {
+					content: 'NEW';
+					.posa;
+					top: -12px;
+					right: -14px;
+					.db;
+					.wh(40; 16);
+					.lh(16);
+					.br(10px);
+					.bc(@green);
+					.tc;
+					.fz(12);
+					color: @white;
+					.scale(.7);
+				}
+			}
+		}
+	}
+	.h-info {
+		.fr;
+		.w(360);
+	}
+	.h-info-top {
+		.fr;
+		.wh(360; 35);
+		.lh(20);
+		.pt(20);
+		.fz(14);
+		i {
+			.fz(16);
+			vertical-align: text-bottom;
+		}
+		b {
+			color: @gray9;
+			.ml(10);
+			font-weight: normal;
+		}
+	}
+	.h-visa {
+		.fl;
+		color: @gray6;
+		&:hover {
+			color: @green;
+		}
+	}
+	.h-phone-time {
+		.db;
+		.fr;
+		color: @gray9;
+		span {
+			color: @grayB;
+		}
+	}
+	.h-user {
+		.fr;
+		.wh(360; 40);
+		.tr;
+		a:hover {
+			color: @green;
+		}
+		span {
+			.m(0 6px);
+		}
+	}
+	.h-login-info {
+		.fr;
+		.wh(200; 40);
+		.br(40px);
+		.bc(@green);
+		.tl;
+		img {
+			.di;
+			.br;
+			vertical-align: middle;
+		}
+		p {
+			.dib;
+			.w(140);
+			.fz(14);
+			color: @white;
+			vertical-align: middle;
+			.tc;
+			i {
+				.dib;
+				.ml(4);
+			}
+		}
+		.h-user-list {
+			.w(200);
+			.box-s(0 0 4px @green-light);
+			.bc(@white);
+			.hide;
+			.tranO(center top);
+			.scale(.8);
+			opacity: 0;
+			a {
+				.db;
+				.wh(100%; 40);
+				.lh(40);
+				.tc;
+				.fz(14);
+				color: @gray6;
+				.borb(1px solid @grayE);
+				&:hover {
+					color: @white;
+					.bc(@green-light);
+				}
+				&:nth-last-child(1) {
+					.borb;
+				}
+			}
+		}
+		&:hover {
+			i {
+				.rotate(-180);
+				.tran;
+			}
+			.h-user-list {
+				.show;
+				.scale(1);
+				opacity: 1;
+				.tran;
+			}
+		}
+	}
+}
+
+
+// footer
+.footer {
+	font-family: simsun;
+	.w(@layout);
+	min-width: @container;
+	.mt(72);
+	// 中间信息 ( 帮助, 联系方式, 二维码 )
+	.f-center {
+		.w(@layout);
+		background: url(../img/common/foot-bg.jpg) center repeat;
+	}
+	.f-info {
+		.wh(1000; 200);
+		.p(50px 100px 0 100px);
+		.ma;
+	}
+	.f-list {
+		.fl;
+		color: @white;
+		.fz(12);
+		a,
+		span {
+			.fz(12);
+			color: @white;;
+		}
+	}
+	.f-list-1 {
+		.w(240);
+		li {
+			.lh(20);
+			list-style-type: disc;
+			.fz(20);
+		}
+	}
+	.f-list-2 {
+		.w(340);
+		li {
+			.lh(32);
+			color: @grayB;
+		}
+	}
+	.f-list-3 {
+		.w(180);
+	}
+	.f-list-4 {
+		.w(160);
+		ul {
+			.ml(20);
+		}
+		li {
+			.lh(24);
+			color: @grayB;
+			list-style-type: disc;
+			.fz(20);
+		}
+		p {
+			.mt(36);
+			color: @white;
+			font-weight: bold;
+		}
+	}
+	// Copyright
+	.f-copyright {
+		.lh(22);
+		.p(20px 0);
+		.fz(12);
+		.tc;
+		color: @grayB;
+		.bc(@gray2);
+	}
+	// 麦兜承诺
+	.f-promise {
+		.yahei;
+		.wh(@layout; 320);
+		.pt(65);
+		background: url(../img/common/services-bg.jpg) center repeat;
+	}
+	.fp-title {
+		.wh(457; 101);
+		.ma;
+		.oh;
+		background: url(../img/common/services-title.png) center repeat;
+	}
+	.fp-list {
+		.w(1040);
+		.mt(60);
+		.ma;
+		.oh;
+		a {
+			.db;
+			.fl;
+			.w(130);
+		}
+		p {
+			.mt(12);
+			.fz(16);
+			color: @white;
+			.tc;
+		}
+		i {
+			.db;
+			.squ(64);
+			.ma;
+			background: url(../img/common/icon-footer.png) no-repeat;
+		}
+		.ico-24h      { .bp(0 0);  }
+		.ico-visa     { .bp(0 -70px);  }
+		.ico-true     { .bp(0 -140px); }
+		.ico-speed    { .bp(0 -210px); }
+		.ico-active   { .bp(0 -280px); }
+		.ico-double   { .bp(0 -350px); }
+		.ico-security { .bp(0 -420px); }
+		.ico-love     { .bp(0 -490px); }
+	}
+}
+
+
+// layout
+.layout,
+.container {
+	.ma;
+	.clearfix;
+}
+.layout {
+	.w(@layout);
+}
+.container {
+	.w(@container);
+}

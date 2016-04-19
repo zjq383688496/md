@@ -1,0 +1,65 @@
+/* table */
+
+.table {
+	.w(100%);
+	input[type='text'],
+	textarea,
+	select {
+		.tc;
+		outline: none;
+	}
+	select {
+		.bor;
+		.p(0 20%);
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		appearance: none;
+	}
+	textarea {
+		resize: none;
+	}
+    input[type='text'] {
+		.w(100%);
+        &.w10 {.w(10%);}
+        &.w20 {.w(20%);}
+        &.w30 {.w(30%);}
+        &.w40 {.w(40%);}
+        &.w50 {.w(50%);}
+        &.w60 {.w(60%);}
+        &.w70 {.w(70%);}
+        &.w80 {.w(80%);}
+        &.w90 {.w(90%);}
+    }
+}
+.table-c,
+.tr-c,
+.th-c,
+.td-c {
+	.tc;
+}
+.table-t,
+.tr-t,
+.th-t,
+.td-t {
+	vertical-align: top;
+}
+.table-line {
+	.bort(1px solid @dark);
+	.borl(1px solid @dark);
+	th,
+	td {
+		.borr(1px solid @dark);
+		.borb(1px solid @dark);
+	}
+	input[type='text'],
+	textarea,
+	select {
+		.bor;
+	}
+}
+.table-r,
+.tr-r,
+.th-r,
+.td-r {
+	.tr;
+}

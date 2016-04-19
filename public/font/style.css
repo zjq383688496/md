@@ -1,0 +1,51 @@
+@font-face {
+    font-family: 'icomoon';
+    src:    url('fonts/icomoon.eot?qs35de');
+    src:    url('fonts/icomoon.eot?qs35de#iefix') format('embedded-opentype'),
+        url('fonts/icomoon.ttf?qs35de') format('truetype'),
+        url('fonts/icomoon.woff?qs35de') format('woff'),
+        url('fonts/icomoon.svg?qs35de#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-controller-record:before {
+    content: "\e902";
+}
+.icon-controller-stop:before {
+    content: "\e903";
+}
+.icon-news:before {
+    content: "\e901";
+}
+.icon-triangle-down:before {
+    content: "\f05b";
+}
+.icon-triangle-left:before {
+    content: "\f044";
+}
+.icon-triangle-right:before {
+    content: "\f05a";
+}
+.icon-triangle-up:before {
+    content: "\f0aa";
+}
+.icon-phone:before {
+    content: "\e900";
+}
+
